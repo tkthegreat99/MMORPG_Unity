@@ -17,12 +17,7 @@ public class PlayerController : MonoBehaviour
         Managers.Input.KeyAction -= OnKeyboard; // 혹시 다른 데서 구독할 수도 있으니까.
         Managers.Input.KeyAction += OnKeyboard; //구독 신청
         Managers.Input.MouseAction -= OnMouseClicked;
-        Managers.Input.MouseAction += OnMouseClicked;
-
-
-        //Managers.UI.ShowPopupUI<UI_Button>();
-        //Managers.UI.ClosePopupUI();
-        Managers.UI.ShowSceneUI<UI_Inven>();
+        Managers.Input.MouseAction += OnMouseClicked;        
     }
 
 
